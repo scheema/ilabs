@@ -15,17 +15,20 @@ unzip ~/ilabs/Medical Minecraft_2.1 -d ~/.minecraft/saves
 rm ~/ilabs/MedicalMinecraftEdu.zip
 rm ~/ilabs/Medical Minecraft_2.1.zip
 
+
 mv minecraft-project bluemix-minecraft
 cd bluemix-minecraft
 mkdir utilities
 cp *.sh utilities
 rm -rf spigot-plugin-watson
-
 rm *.zip
 cd
 mv ~/ilabs/WatsondDialogSpigot ~/bluemix-minecraft
 mv ~/ilabs/watsonspigotbluemix ~/bluemix-minecraft
+mv ~/ilabs/spigot-plugin-watson ~/bluemix-minecraft
 mv ~/ilabs/*.jar ~/reflibs
+mv ~/ilabs/input ~/bluemix-minecraft
+cd ~/bluemix-minecraft
 echo" Please note down the IP address of the machine"
 ifconfig eth0
 
