@@ -28,8 +28,3 @@ echo" Please note down the IP address of the machine"
 ifconfig eth0
 
 echo "You are ready to get started - please follow the Interconnect Lab PDF file"
-
-
-
-
-
