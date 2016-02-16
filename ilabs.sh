@@ -11,11 +11,11 @@ mv ~/refLibs ~/reflibs
 mkdir ~/.minecraft/saves
 mkdir ~/.minecraft/resourcepacks
 unzip ~/ilabs/MedicalMinecraftEDU.zip -d ~/.minecraft/resourcepacks
-unzip ~/ilabs/Medical Minecraft_2.1.zip -d ~/.minecraft/saves
+unzip ~/ilabs/Medical\ Minecraft_2.1.zip -d ~/.minecraft/saves
 mv ~/.minecraft/saves/Medical\ Minecraft_2.1\ -\ Copy/ ~/.minecraft/saves/Medical\ Minecraft_2.1
 
 rm ~/ilabs/MedicalMinecraftEDU.zip
-rm ~/ilabs/Medical Minecraft_2.1.zip
+rm ~/ilabs/Medical\ Minecraft_2.1.zip
 
 
 mv minecraft-project bluemix-minecraft
@@ -31,6 +31,7 @@ mv ~/ilabs/watsonspigotbluemix ~/bluemix-minecraft
 mv ~/ilabs/spigot-plugin-watson ~/bluemix-minecraft
 mv ~/ilabs/*.jar ~/reflibs
 mv ~/ilabs/input ~/bluemix-minecraft
+mv ~/ilabs/*.pdf ~/
 cd ~/bluemix-minecraft
 clear
 echo" Please note down the IP address of the machine"
