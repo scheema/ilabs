@@ -5,14 +5,15 @@
 cd
 rm *.odt
 rm -rf Reference
+rm -rf Code
 mv ~/refLibs ~/reflibs
 
 mkdir ~/.minecraft/saves
 mkdir ~/.minecraft/resourcepacks
-unzip MedicalMinecraftEdu -d ~/.minecraft/resourcepacks
-unzip Medical Minecraft_2.1 -d ~/.minecraft/saves
-rm MedicalMinecraftEdu.zip
-rm Medical Minecraft_2.1.zip
+unzip ~/ilabs/MedicalMinecraftEdu -d ~/.minecraft/resourcepacks
+unzip ~/ilabs/Medical Minecraft_2.1 -d ~/.minecraft/saves
+rm ~/ilabs/MedicalMinecraftEdu.zip
+rm ~/ilabs/Medical Minecraft_2.1.zip
 
 mv minecraft-project bluemix-minecraft
 cd bluemix-minecraft
@@ -22,9 +23,9 @@ rm -rf spigot-plugin-watson
 
 rm *.zip
 cd
-mv WatsondDialogSpigot ~/bluemix-minecraft
-mv watsonspigotbluemix ~/bluemix-minecraft
-mv *.jar ~/reflibs
+mv ~/ilabs/WatsondDialogSpigot ~/bluemix-minecraft
+mv ~/ilabs/watsonspigotbluemix ~/bluemix-minecraft
+mv ~/ilabs/*.jar ~/reflibs
 echo" Please note down the IP address of the machine"
 ifconfig eth0
 
