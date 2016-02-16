@@ -5,16 +5,17 @@
 cd
 rm *.odt
 rm -rf Reference
+mv ~/refLibs ~/reflibs
 
 mkdir ~/.minecraft/saves
 mkdir ~/.minecraft/resourcepacks
-unzip MedicalMinecraftEdu ~/.minecraft/resourcepacks
-unzip Medical Minecraft_2.1 ~/.minecraft/saves
+unzip MedicalMinecraftEdu -d ~/.minecraft/resourcepacks
+unzip Medical Minecraft_2.1 -d ~/.minecraft/saves
 rm MedicalMinecraftEdu.zip
 rm Medical Minecraft_2.1.zip
 
-mv minecraft-project bluemix-minecraft-project
-cd bluemix-minecraft-project
+mv minecraft-project bluemix-minecraft
+cd bluemix-minecraft
 mkdir utilities
 cp *.sh utilities
 rm -rf spigot-plugin-watson
