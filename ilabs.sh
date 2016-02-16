@@ -10,8 +10,8 @@ mv ~/refLibs ~/reflibs
 
 mkdir ~/.minecraft/saves
 mkdir ~/.minecraft/resourcepacks
-unzip ~/ilabs/MedicalMinecraftEdu -d ~/.minecraft/resourcepacks
-unzip ~/ilabs/Medical Minecraft_2.1 -d ~/.minecraft/saves
+unzip ~/ilabs/MedicalMinecraftEdu.zip -d ~/.minecraft/resourcepacks
+unzip ~/ilabs/Medical Minecraft_2.1.zip -d ~/.minecraft/saves
 rm ~/ilabs/MedicalMinecraftEdu.zip
 rm ~/ilabs/Medical Minecraft_2.1.zip
 
@@ -19,9 +19,10 @@ rm ~/ilabs/Medical Minecraft_2.1.zip
 mv minecraft-project bluemix-minecraft
 cd bluemix-minecraft
 mkdir utilities
-cp *.sh utilities
+mv *.sh utilities
 rm -rf spigot-plugin-watson
 rm *.zip
+
 cd
 mv ~/ilabs/WatsondDialogSpigot ~/bluemix-minecraft
 mv ~/ilabs/watsonspigotbluemix ~/bluemix-minecraft
