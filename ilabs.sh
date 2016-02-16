@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #setup script for Interconnect 2016 Lab
 # Author: Srinivas Cheemalapati
 # IBM Cloud Advisor
@@ -34,9 +36,14 @@ mv ~/ilabs/input ~/bluemix-minecraft
 mv ~/ilabs/*.pdf ~/
 cd ~/bluemix-minecraft
 clear
-echo" Please note down the IP address of the machine"
+
+echo
+echo "Please note down the IP address <inet addr below> of the machine"
+echo
+echo " ---------------------------------------------------------------"
+echo
 ifconfig eth0
-
-echo" ----------------------------------------------------------------------------------"
-
+echo " ---------------------------------------------------------------"
+echo
 echo "You now have all the files / folders for the Lab setup !!!!"
+echo
