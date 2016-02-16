@@ -10,9 +10,11 @@ mv ~/refLibs ~/reflibs
 
 mkdir ~/.minecraft/saves
 mkdir ~/.minecraft/resourcepacks
-unzip ~/ilabs/MedicalMinecraftEdu.zip -d ~/.minecraft/resourcepacks
+unzip ~/ilabs/MedicalMinecraftEDU.zip -d ~/.minecraft/resourcepacks
 unzip ~/ilabs/Medical Minecraft_2.1.zip -d ~/.minecraft/saves
-rm ~/ilabs/MedicalMinecraftEdu.zip
+mv ~/.minecraft/saves/Medical\ Minecraft_2.1\ -\ Copy/ ~/.minecraft/saves/Medical\ Minecraft_2.1
+
+rm ~/ilabs/MedicalMinecraftEDU.zip
 rm ~/ilabs/Medical Minecraft_2.1.zip
 
 
@@ -24,13 +26,16 @@ rm -rf spigot-plugin-watson
 rm *.zip
 
 cd
-mv ~/ilabs/WatsondDialogSpigot ~/bluemix-minecraft
+mv ~/ilabs/WatsonDialogSpigot ~/bluemix-minecraft
 mv ~/ilabs/watsonspigotbluemix ~/bluemix-minecraft
 mv ~/ilabs/spigot-plugin-watson ~/bluemix-minecraft
 mv ~/ilabs/*.jar ~/reflibs
 mv ~/ilabs/input ~/bluemix-minecraft
 cd ~/bluemix-minecraft
+clear
 echo" Please note down the IP address of the machine"
 ifconfig eth0
 
-echo "You are ready to get started - please follow the Interconnect Lab PDF file"
+echo" ----------------------------------------------------------------------------------"
+
+echo "You now have all the files / folders for the Lab setup !!!!"
