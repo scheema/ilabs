@@ -8,6 +8,8 @@ cd
 rm *.odt
 rm -rf Reference
 rm -rf Code
+rm -rf Documents
+rm -rf Desktop
 mv ~/refLibs ~/reflibs
 
 mkdir ~/.minecraft/saves
@@ -26,6 +28,8 @@ mkdir utilities
 mv *.sh utilities
 rm -rf spigot-plugin-watson
 rm *.zip
+rm ~/reflibs/watson-developer-cloud-2.7.0.jar
+rm ~/reflibs/javaplays-watson-master.zip
 
 cd
 mv ~/ilabs/WatsonDialogSpigot ~/bluemix-minecraft
@@ -35,6 +39,8 @@ mv ~/ilabs/*.jar ~/reflibs
 mv ~/ilabs/input ~/bluemix-minecraft
 mv ~/ilabs/*.pdf ~/
 cd ~/bluemix-minecraft
+cd
+rm -rf ~/ilabs/
 clear
 
 echo
@@ -45,5 +51,6 @@ echo
 ifconfig eth0
 echo " ---------------------------------------------------------------"
 echo
+
 echo "You now have all the files / folders for the Lab setup !!!!"
 echo
