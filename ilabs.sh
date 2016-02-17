@@ -38,7 +38,7 @@ mv ~/ilabs/spigot-plugin-watson ~/bluemix-minecraft
 mv ~/ilabs/*.jar ~/reflibs
 mv ~/ilabs/input ~/bluemix-minecraft
 mv ~/ilabs/*.pdf ~/
-mv ~ilabs/lab_ids.txt ~/
+mv ~/ilabs/lab_ids.txt ~/
 cd ~/bluemix-minecraft
 cd
 rm -rf ~/ilabs/
