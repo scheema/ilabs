@@ -1,0 +1,56 @@
+Commands needed
+--------------------
+
+Open Browser (firefox) -> go to 
+
+1) Create a Node.js application and add Dialog service to it. (go to bluemix.net -> new web application -> node.js framework -> add dialog service -> run the application
+
+2) Get credentials for Dialog service from the above created appication.
+
+Open Bluemix Dashboard. Click on the application you created with dialog service attached
+Click on the dialog icon credentials and copy and paste the username, password into this document.
+
+3) type -> cd ~/bluemix-minecraft
+------------------------------------------------------
+
+4) Command to get the dialog id << please fill your own username, password, unique dialog name >>
+
+curl -u "USERNAME":"PASSWORD" -X POST --form file=@input/DialogTest.xml --form name=your_dialog_name "https://gateway.watsonplatform.net/dialog/api/v1/dialogs"
+
+Example:
+curl -u "baxxxxxb-6xx1-4yy5-ae29-03dxxxxx25" -X POST --form file=@input/DialogTest.xml --form name=dialog02164334 "https://gateway.watsonplatform.net/dialog/api/v1/dialogs"
+
+CLOSE BLUEMIX DASHBOARD
+-------------------------------------------------------
+5) GET DIALOG ID - select the curl command in step 3 with mouse and CNTRL+C 
+
+
+RESULT:
+minecraft@ubuntu:~/bluemix-minecraft$ curl -u "baxxxxxb-6xx1-4yy5-ae29-03dxxxxx25":"3yyxxaeht4" -X POST --form file=@input/DialogTest.xml --form name=dialog02164334 "https://gateway.watsonplatform.net/dialog/api/v1/dialogs"
+{"dialog_id": "98044441-296e-4158-8efd-a623ffdd14d0"}
+minecraft@ubuntu:~/bluemix-minecraft$ 
+
+----------------
+Fill the above information (username, password, dialog id into the following used in Dialog Properties file"
+dialog.properties example:
+
+userid=baxxxxxb-6xx1-4yy5-ae29-03dxxxxx25
+userpass=3yyxxaeht4
+dialog_endpoint=https://gateway.watsonplatform.net/dialog/api
+dialog_id=b6f8f1b1-aae8-4aca-bd74-4848810bd1a5
+
+THIS INFORMATION CAN BE PASTED INTO THE ECLIPSE PROJECT dialog.properties FILE
+
+----------------------------------------------------------------------------
+OTHER COMMANDS
+
+1) To get all the existing dialogs 
+curl -u "baxxxxxb-6xx1-4yy5-ae29-03dxxxxx25":"3ppGGDDhFF4" "https://gateway.watsonplatform.net/dialog/api/v1/dialogs"
+
+
+2) To delete all the dialogs
+
+curl -u "xxxxxx-aaaa-yyyy-bbbb-03d3ddddd25":"3pkkggrr4" -X DELETE "https://gateway.watsonplatform.net/dialog/api/v1/dialogs"
+
+
+

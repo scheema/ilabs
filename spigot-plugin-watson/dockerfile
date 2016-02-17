@@ -18,6 +18,8 @@ RUN java -jar minecraft/BuildTools.jar
 RUN echo "eula=true" > eula.txt
 RUN mkdir plugins
 ADD watsonqa.jar /plugins/watsonqa.jar
+ADD MedicalWorld ./MedicalWorld
+ADD server.properties ./server.properties
 # Install unzip
 RUN apt-get install -y unzip
 RUN unzip -uo /plugins/watsonqa.jar -d /plugins/
