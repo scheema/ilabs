@@ -10,25 +10,37 @@ dialog_id=
 STEPS to RETRIEVE and FILL the ABOVE INFORMATION
 --------------------
 
-1) Open Browser (firefox) -> go to https://console.ng.bluemix.net/ 
+Open Browser (firefox) -> go to https://console.ng.bluemix.net/ -- How to create a Bluemix app are given in article 4
+
+
+1) Create a Node.js application and add Dialog service to it. (go to bluemix.net -> new web application -> node.js framework -> add dialog service -> run the application
 
 2) Open Bluemix Dashboard. Click on the application you created with dialog service attached
 
 3) Click on the dialog icon credentials and copy and paste the username, password into the userid, userpass above
 
+----------------------------------------------------------------------------
+
+NOTE: The following assumes you have downloaded the files from https://github.com/scheema/ilabs
+and executed the script ilabs.sh under the ilabs folder
+
 4) In the Virtual Machine, open Terminal and type -> cd ~/bluemix-minecraft 
 
+------------------------------------------------------
 
 5) Execute the following command to get the dialog id << please fill your own username, password, unique dialog name you >>
 
 The dialog name is something you will create here. This will be a unique name.
 
+
 curl -u "USERNAME":"PASSWORD" -X POST --form file=@input/DialogTest.xml --form name=your_dialog_name "https://gateway.watsonplatform.net/dialog/api/v1/dialogs"
 
-Example on how the command will look when complete:
+
+Example on how this will look when complete:
 curl -u "bac8xxxxx51-45xx-axx9-03xxxxxx25":"3xxxxxxN4" -X POST --form file=@input/DialogTest.xml --form name=dialog02164334 "https://gateway.watsonplatform.net/dialog/api/v1/dialogs"
 
-RESULT of the Execution of command WILL LOOK LIKE BELOW:
+
+RESULT WILL LOOK LIKE BELOW:
 
 minecraft@ubuntu:~/bluemix-minecraft$ curl -u "bac8869b-6251-4585-ae29-03d3d6f6c925":"3TXiWWGlDhN4" -X POST --form file=@input/DialogTest.xml --form name=dialog02164334 "https://gateway.watsonplatform.net/dialog/api/v1/dialogs"
 {"dialog_id": "98044441-296e-4158-8efd-a623ffdd14d0"}
